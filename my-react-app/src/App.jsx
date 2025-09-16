@@ -1,9 +1,20 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar"; // Adjust path if needed
-// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import LandingPage from "./pages/LandingPage"; // Assuming LandingPage.jsx is in the same directory
 
 const App = () => {
-  return <Navbar />;
+  return (
+    <div>
+      <Navbar />
+      {/* <div>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/home" element={<HomePage />} />
+        </Routes>
+      </div> */}
+    </div>
+  );
 };
 
 export default App;
